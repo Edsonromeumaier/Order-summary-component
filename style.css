@@ -13,37 +13,57 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
  body {
     background: url('./images/pattern-background-desktop.svg');
     background-repeat: no-repeat;
     background-size:100%;
     display: flex;   
-    flex-direction: column;
+    flex-direction:column;
     height: 100vh;
     width: 100%;
     align-items: center;
     justify-content: center;
-    
+    background-color: var(--paleBlue);
+
 }
     
+ 
+    .card{
+        background-color: var(--veryPaleBlue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 400px; 
+        height: 300px;       
+        box-shadow:var(--darkBlue);
+        border-radius: 1em;
 
+    }
+   
+    
     img {
         width: 100%;
         border-radius: 0.8em 0.8em 0 0;
             
-    }  
-    .card{
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        background-color: var(--paleBlue);
-        text-align: center;               
-        border-radius: 0.8em 0.8em;
-        box-shadow: var(--desaturatedBlue);
-            
-    }
-   
+    } 
+
     
+    h1 {
+            font-family: 'Red Hat Display', sans-serif;
+            width: 700;            
+            color: var(--fontRedHat);
+    }
+
+    p {
+        padding: 2em;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Overpass', sans-serif;
+        width: 400;
+        color: var(--fontRedHat);
+    }
 
     .price{
         display: flex;
@@ -54,23 +74,11 @@
         margin: 0 auto;
         background-color: var(--veryPaleBlue);
     }
+     .price img{
+        width: 48px;
+        height: 48px;
+     }
 
-    h1 {
-            font-family: 'Red Hat Display', sans-serif;
-            width: 900;
-            padding: 1em;
-            color: var(--fontRedHat);
-    }
-
-    p {
-        padding: 2em;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Overpass', sans-serif;
-        width: 400;
-        color: var(--fontRedHat);
-    }
 
 .botoes{
     font-family: 'Outfit', sans-serif;
@@ -108,7 +116,34 @@
 
 
     .attribution {
-        @media (min-width: 700px), handheld and (orientation: landscape) {  }   
-        font-family: 'Outfic', sans-serif;
-
+        display: none;
     }
+
+@media screen(max-width:375px){
+
+ body {
+    background: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size:100%;
+    display: flex;   
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+    
+ 
+    .card{
+        
+        flex-direction: column;
+        margin: 0.8em 0.6em;
+        background-color: var(--paleBlue);
+        text-align: center;               
+        border-radius: 0.8em 0.8em;
+        box-shadow: var(--desaturatedBlue);
+            
+    }
+   
+}
