@@ -19,103 +19,44 @@
     background: url('./images/pattern-background-desktop.svg');
     background-repeat: no-repeat;
     background-size:100%;
-    display: flex;   
-    flex-direction:column;
+    display: flex;    
     height: 100vh;
     width: 100%;
     align-items: center;
     justify-content: center;
     background-color: var(--paleBlue);
+    font-family: 'Red Hat Display' , sans-serif;
 
-}
-    
+}    
  
-    .card{
+ .card{
         background-color: var(--veryPaleBlue);
-        display: flex;
+        display: grid;
         align-items: center;
         justify-content: center;
         width: 400px; 
-        height: 300px;       
+        height: 85vh;       
         box-shadow:var(--darkBlue);
-        border-radius: 1em;
-
-    }
-   
-    
-    img {
+        border-radius: 1.2rem;
+        
+    }    
+  section img {
         width: 100%;
-        border-radius: 0.8em 0.8em 0 0;
-            
+        border-radius: 0.8em 0.8em 0 0;  
+        margin-top:-4px;   
+          
     } 
-
-    
-    h1 {
-            font-family: 'Red Hat Display', sans-serif;
-            width: 700;            
-            color: var(--fontRedHat);
-    }
-
-    p {
-        padding: 2em;
-        margin: 0 auto;
-        text-align: center;
-        font-family: 'Overpass', sans-serif;
-        width: 400;
-        color: var(--fontRedHat);
-    }
-
-    .price{
-        display: flex;
-        width: 100%;
-        padding: 0.8em;
-        align-items:center;
-        justify-content: space-around;                
-        margin: 0 auto;
-        background-color: var(--veryPaleBlue);
-    }
-     .price img{
-        width: 48px;
-        height: 48px;
-     }
-
-
-.botoes{
-    font-family: 'Outfit', sans-serif;
-    display:grid;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 15px;
-    
+.contain3{
+    display: grid;
 }
 
-    .btn {
-        cursor: pointer;
-        background-color: var(--brightBlue);
-        padding: 1rem 0;
-        box-shadow: var(--darkBlue);
-        border-radius: 0.8rem;
-        color: var(--fontRedHat);
-        font-weight:700;
-        margin-bottom: 1.5rem;
-        transition: 0.3s;
-
-    }
-    .btn:hover{
-        background: var(--darkBlue);
-    }
-
-    #cancel {
-        text-decoration: none;
-        color: var(--fontRedHat);
-        font-weight: 700;
-        margin-bottom: 2rem;
-        transition: var(--brightBlue);
-    }
+.musicIcon{
+    width: 48px;
+    height: 48px;
+}
 
 
-
-    .attribution {
+    .attribution{
         display: none;
     }
 
@@ -133,17 +74,13 @@
     justify-content: center;
     
 }
-    
- 
-    .card{
-        
-        flex-direction: column;
+.card{       
+        flex-direction:column;
         margin: 0.8em 0.6em;
         background-color: var(--paleBlue);
-        text-align: center;               
+        text-align: center;              
         border-radius: 0.8em 0.8em;
         box-shadow: var(--desaturatedBlue);
-            
     }
    
 }
