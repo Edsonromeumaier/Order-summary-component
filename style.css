@@ -31,9 +31,10 @@
  
  .card{
         background-color: var(--veryPaleBlue);
-        display: grid;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         width: 400px; 
         height: 85vh;       
         box-shadow:var(--darkBlue);
@@ -47,12 +48,22 @@
           
     } 
 .contain3{
-    display: grid;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    text-align: center;
+    flex-grow: 1;
+    
+
 }
 
 .musicIcon{
     width: 48px;
     height: 48px;
+}
+.price{
+    display: flex;
+    flex-direction: row;
 }
 
 

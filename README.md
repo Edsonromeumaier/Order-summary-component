@@ -3,5 +3,5 @@
 
 ## I know that mobile is no so responsivily but my first version. 
 
-   
+ ## I get a knowledge about flex-grow.   
 
