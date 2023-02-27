@@ -53,13 +53,45 @@
     justify-content:space-around;
     text-align: center;
     flex-grow: 1;
-    
+    margin-left:3rem;
+    margin-right:3rem;
+}
 
+.textInfo{
+    width:100%    
+}
+
+ .textInfo h1{
+    margin-top:0.6rem;    
+    font-weight:900;
+    font-family: 'Overpass' sans-serif;
+
+ }
+
+ .textInfo p{
+   color: var(--desaturatedBlue);
+   margin-top:0.6rem;
+     }
+
+.price{
+    margin-top: -2.4rem;    
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--desaturatedBlue);
+    height:6rem;
+    border-radius: 0.8rem;
 }
 
 .musicIcon{
+    margin-left:-1rem;
     width: 48px;
     height: 48px;
+
+.priceDatail{
+    margin-left: -2rem;
+}
+
+
 }
 .price{
     display: flex;
@@ -73,25 +105,6 @@
 
 @media screen(max-width:375px){
 
- body {
-    background: url('./images/pattern-background-desktop.svg');
-    background-repeat: no-repeat;
-    background-size:100%;
-    display: flex;   
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    
-}
-.card{       
-        flex-direction:column;
-        margin: 0.8em 0.6em;
-        background-color: var(--paleBlue);
-        text-align: center;              
-        border-radius: 0.8em 0.8em;
-        box-shadow: var(--desaturatedBlue);
-    }
+
    
 }
