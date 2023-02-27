@@ -4,7 +4,7 @@
     --veryPaleBlue: hsl(225, 100%, 98%);
     --desaturatedBlue: hsl(224, 23%, 55%);
     --darkBlue: hsl(223, 47%, 23%);
-    --fontRedHat: 'Red Hat Display', sans-serif;
+    
   }
 
   
@@ -74,31 +74,30 @@
      }
 
 .price{
-    margin-top: -2.4rem;    
-    justify-content: space-evenly;
+    margin-top: -2.4rem; 
+    display: flex;   
+    justify-content: space-around;
     align-items: center;
-    background-color: var(--desaturatedBlue);
+    background-color: var(--paleBlue);
     height:6rem;
     border-radius: 0.8rem;
 }
+.gp1{
+    display: flex;
+}
 
-.musicIcon{
-    margin-left:-1rem;
+.musicIcon{    
     width: 48px;
     height: 48px;
-
-.priceDatail{
-    margin-left: -2rem;
 }
-
+.priceDetail{
+    margin-left:1rem;
 
 }
-.price{
+.botoes{
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
 }
-
-
     .attribution{
         display: none;
     }
