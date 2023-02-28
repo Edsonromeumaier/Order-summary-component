@@ -83,13 +83,14 @@
 .botoes{    
     display: flex;
     flex-direction:column;
-    gap:0.65rem;
+    gap:1.5rem;
     margin-bottom:1.5rem;
 }
 .btn{
     background-color: var(--brightBlue);
     color: #ffffff;
-    box-shadow:#3829e0;
+    box-shadow:0 0.8rem 1.2rem 0 hsla(245, 75%, 52%, .25);
+    opacity:1;
     height: 4rem;
     border-radius:0.8rem;
 }
